@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <link rel="stylesheet" href="styles.css">
+<p id="date"></p>
+<script>
+
+var loop = function () { 
+  n =  new Date();
+  h = n.getHours();
+  m = n.getMinutes();
+  if (h > 12) h = h - 12;
+  if (m < 10) {
+    document.getElementById("date").innerHTML = h + ":0" + m; 
+  }
+  else {
+    document.getElementById("date").innerHTML = h + ":" + m; 
+  }
+}
+
+setInterval(loop, 1000*30);
+
+</script>
+</html>
+

@@ -1,0 +1,13 @@
+
+body {
+      background-color: black;
+}
+h1 {
+      color: blue;
+}
+p {
+      color: white;
+      font-family: courier;
+      font-size: 900%;
+      text-align: center;
+}
